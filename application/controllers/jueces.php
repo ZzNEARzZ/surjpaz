@@ -1,7 +1,8 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class jueces extends CI_Controller {
+class jueces extends CI_Controller
+{
 
     /**
      * Index Page for this controller.
@@ -18,12 +19,12 @@ class jueces extends CI_Controller {
      * map to /index.php/welcome/<method_name>
      * @see http://codeigniter.com/user_guide/general/urls.html
      */
-    public function index($info='')
+    public function index($info = '')
     {
-        $data=array('title' =>'Hola' ,'mensaje'=>'Mundo codeingniter','info'=>$info );
+        $data = array('title' => 'Hola', 'mensaje' => 'Mundo codeingniter', 'info' => $info);
         //$this->load->view('welcome_message', $data);
 
-        $this->load->view('jueces',$data);
-         //$this->load->view('juzgado');
+        $this->load->view('jueces', $data);
+        //$this->load->view('juzgado');
     }
 }
